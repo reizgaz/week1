@@ -1,0 +1,14 @@
+{
+  "name": "week1",
+  "version": "1.0.1",
+  "engines": {
+    "node": "10.19.0"
+  },
+  "main": "index.js",
+  "repository": "https://github.com/reizgaz/week1.git",
+  "author": "reizgaz",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  }
+}
