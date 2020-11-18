@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>week3</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ </head>
+ <body>
+    <input id="inp">
+    <button id="bt">Нажми</button>
+    <script>
+       const bt = document.getElementById("bt");
+       bt.addEventListener("click", clickEvent);
+       function clickEvent() {
+         const inp = document.getElementById("inp");
+         const val = inp.value;
+         
+         fetch(val)
+           .then(response => {return response.text();})
+           .then(data => {inp.val = data;})
+           .catch(reject = > {console.log(reject)});
+       }
+    </script>
+ </body>
+</html>
