@@ -1,0 +1,9 @@
+function task(x) {
+  const prom = new Promise((resolve, reject) => {
+    if (x < 18) 
+      resolve('yes');
+    else reject('no');
+  });
+  prom.catch(reject => console.log(reject))
+  return prom;
+}
