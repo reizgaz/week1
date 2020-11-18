@@ -16,9 +16,15 @@
          const val = inp.value;
          
          fetch(val)
-           .then(response => {return response.text();})
-           .then(data => {inp.val = data;})
-           .catch(reject = > {console.log(reject)});
+           .then((response) => {
+                    return response.text();
+                })
+                .then((data) => {
+                    inp.value = data;
+                })
+                .catch(reject => {
+                    console.log(reject);
+                });
        }
     </script>
  </body>
